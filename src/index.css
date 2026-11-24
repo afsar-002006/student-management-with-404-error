@@ -1,0 +1,84 @@
+/* =====================================================
+   Global CSS – Student Management System
+   ===================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Primary palette */
+  --primary:        #6C63FF;
+  --primary-dark:   #5a52d5;
+  --primary-light:  #EDE9FF;
+  --secondary:      #3ECFCF;
+  --accent:         #FF6584;
+
+  /* Neutrals */
+  --bg:             #F4F6FB;
+  --surface:        #FFFFFF;
+  --surface-hover:  #F0EDFF;
+  --border:         #E2E5F1;
+
+  /* Text */
+  --text:           #4A4D6A;
+  --text-heading:   #1E1F3B;
+  --text-muted:     #9397B3;
+
+  /* Status */
+  --success:        #22C55E;
+  --warning:        #F59E0B;
+  --danger:         #EF4444;
+  --info:           #3B82F6;
+
+  /* Shadows */
+  --shadow-sm:  0 1px 3px rgba(108,99,255,0.08);
+  --shadow-md:  0 4px 16px rgba(108,99,255,0.12);
+  --shadow-lg:  0 8px 32px rgba(108,99,255,0.18);
+
+  /* Layout */
+  --navbar-h:   64px;
+  --sidebar-w:  240px;
+
+  /* Fonts */
+  --font:       'Inter', system-ui, sans-serif;
+
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-heading);
+  font-weight: 700;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--border); }
+::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 3px; }

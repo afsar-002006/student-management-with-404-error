@@ -1,0 +1,38 @@
+/* =====================================================
+   DashboardLayout
+   ===================================================== */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.layout__body {
+  display: flex;
+  flex: 1;
+  margin-top: var(--navbar-h);
+}
+
+.layout__content {
+  flex: 1;
+  margin-left: var(--sidebar-w);
+  padding: 28px;
+  min-height: calc(100vh - var(--navbar-h));
+  transition: margin-left 0.3s ease;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .layout__content {
+    padding: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .layout__content {
+    margin-left: 0;
+    padding: 16px;
+    padding-top: 24px;
+  }
+}
